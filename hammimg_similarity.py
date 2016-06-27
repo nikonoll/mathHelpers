@@ -32,6 +32,7 @@ testData = np.array([
   ])
 
 # ---------------------------
+
 i = 1
 for d in cinemaData:
   print "x", i, ": ", (simH(d, testData[0]))
