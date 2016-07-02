@@ -78,6 +78,17 @@ for man in stuntmenData:
 print("---------similarites----------")
 for man in stuntmenData:
   x = subjectiveSim(man, t1wantedMan[0], weights[0])
-  print(man.item(0), ":  ")
-  print((sum(x)/normFactor))
+  print(man.item(0), ":  ",(sum(x)/normFactor))
+  # print(x)
+
+print("similarities for T2: ")
+print("-----------data-----------")
+print(t2wantedMan[0])
+for man in stuntmenData:
+  print(man)
+
+print("---------similarites----------")
+for man in stuntmenData:
+  x = subjectiveSim(man, t2wantedMan[0], weights[0])
+  print(man.item(0), ":  ",(sum(x)/normFactor))
   print(x)
